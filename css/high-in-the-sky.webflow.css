@@ -307,6 +307,7 @@ p {
   font-family:'Open Sans', sans-serif;
   color: #303934;
   font-size: 18px;
+  line-height: 1.5em;
   font-style: normal;
   text-align: center;
   text-transform: none;
@@ -437,6 +438,9 @@ p {
   .logo {
     width: 97px;
     float: left;
+  }
+  .nav-link.active {
+    font-size: 12px;
   }
   .nav-link {
     margin-right: 0px;
