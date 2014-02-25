@@ -9,14 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/high-in-the-sky.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Open Sans:300,400,600,700,800","Inconsolata:400,700","Changa One:400"]
-      }
-    });
-  </script>
+  <link href='http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+
   <script>
     if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
   </script>
@@ -32,7 +27,7 @@
     <div class="w-col w-col-3 left-sidebar">
       <div class="w-clearfix fixed-nav">
         <img class="logo" src="images/logo.png" width="268px" alt="53036ce83b32d3176500059b_logo.png">
-        <h4 class="w-hidden-medium w-hidden-small w-hidden-tiny slogan" color="white">SkyNet. <br>Интернет–провайдер</h4>
+        <h4 class="w-hidden-medium w-hidden-small w-hidden-tiny slogan" color="white">SkyNet. Интернет–провайдер</h4>
         <div class="w-hidden-main w-hidden-medium w-clearfix headtop-mobile">
           <h3>Действующим абонентам:<br> <strong>8(812) 386-20-20</strong></h3>
           <h3>Бесплатное подключение:<br><strong class="phone">8(812) 642-20-35</strong></h3>
@@ -54,6 +49,38 @@
         </div>
       </div>
       <h2 class="w-hidden-small w-hidden-tiny devise">Высокоскоростной интернет ”SkyNet” — это круглосуточный доступ в сеть на скорости до 100 Мбит/c.</h2>
+      <h2>Основные тарифы</h2>
+      <table class="tariffs">
+        <thead>
+          <tr>
+            <th>Название тарифа</th>
+            <th>Абонентская плата</th>
+            <th>Минимальная скорость</th>
+            <th>Максимальная скорость</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Земля</td>
+            <td>450 р</td>
+            <td>20 Мбит/с</td>
+            <td>100 Мбит/с</td>
+          </tr>
+          <tr>
+            <td>Вода</td>
+            <td>550 р</td>
+            <td>30 Мбит/с</td>
+            <td>100 Мбит/с</td>
+          </tr>
+          <tr>
+            <td>Огонь</td>
+            <td>650 р</td>
+            <td>40 Мбит/с</td>
+            <td>100 Мбит/с</td>
+          </tr>
+        </tbody>
+      </table>
+
       <h2>Наши преимущества</h2>
       <ul class="w-list-unstyled advantages">
         <li class="w-clearfix feature">
@@ -85,52 +112,11 @@
           <div>Локальный Yandex.</div>
         </li>
       </ul>
-      <h2>Основные тарифы</h2>
-      <div class="w-row">
-        <div class="w-col w-col-4">
-          <div class="tariff2">
-            <div class="tariff-title">Земля</div>
-            <div class="tariff2-speed">
-              <h5>Скорость</h5>
-              <div>20-100 Мбит/с</div>
-            </div>
-            <div class="tariff2-price">
-              <h5>Стоимость</h5>
-              <div>от 300 руб/мес</div>
-            </div>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="tariff2">
-            <div class="tariff-title">Вода</div>
-            <div class="tariff2-speed">
-              <h5>Скорость</h5>
-              <div>30-100 Мбит/с</div>
-            </div>
-            <div class="tariff2-price">
-              <h5>Стоимость</h5>
-              <div>от 370 руб/мес</div>
-            </div>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="tariff2">
-            <div class="tariff-title">Огонь</div>
-            <div class="tariff2-speed">
-              <h5>Скорость</h5>
-              <div>40-100 Мбит/с</div>
-            </div>
-            <div class="tariff2-price">
-              <h5>Стоимость</h5>
-              <div>от 400 руб/мес</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="action">Для тарифов “Вода” и “Огонь” действует выгодная программа –
+      
+<!--       <div class="action">Для тарифов “Вода” и “Огонь” действует выгодная программа –
         <br> <a href="http://на абонементы, блок со скидкой" class="growing">“Растущая скидка”</a>
-      </div>
-      <img class="banner" src="images/arenda_cut.jpg" alt="530373de7609a7032c0004e5_arenda_cut.jpg">
+      </div> -->
+      <img class="banner" src="images/banner.jpg" alt="530373de7609a7032c0004e5_arenda_cut.jpg">
     </div>
   </div>
   <footer class="footer-section">
