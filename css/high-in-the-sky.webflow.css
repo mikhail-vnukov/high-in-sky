@@ -71,7 +71,6 @@ h5 {
 }
 h6 {
 	margin: 10px 0px;
-	font-family:'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
@@ -79,7 +78,6 @@ h6 {
 p {
 	margin-right: 0px;
 	margin-bottom: 14px;
-	font-family:'Open Sans', sans-serif;
 	color: #303934;
 	font-size: 14px;
 }
@@ -139,7 +137,6 @@ p {
 	border-width: 0px 0px 2px;
 	border-color: rgba(190, 196, 180, 0.65);
 	border-radius: 0px;
-	font-family:'Open Sans', sans-serif;
 	color: #303934;
 	font-size: 16px;
 	font-style: normal;
@@ -161,23 +158,6 @@ p {
 	text-align: left;
 	letter-spacing: 0px;
 	text-indent: 0px;
-}
-.image-example {
-	height: 380px;
-	background-image: url('../images/example-bg.png');
-}
-.image-example.headbanner {
-	display: block;
-	width: 700px;
-	height: 234px;
-	margin-top: 46px;
-	margin-right: auto;
-	margin-left: auto;
-	background-image: url('../images/arenda_cut.jpg'), url('../images/example-bg.png');
-	opacity: 1;
-	font-family:'Changa One', Impact, sans-serif;
-	text-align: center;
-	list-style-type: none;
 }
 .caption {
 	margin-top: 10px;
@@ -230,37 +210,14 @@ p {
 	margin-left: 41px;
 	padding-top: 0px;
 	background-color: transparent;
-	font-family:'Open Sans', sans-serif;
 	color: #303934;
 	font-size: 15px;
 	font-weight: 400;
 	text-align: left;
 }
-.tariff-th {
-	min-height: 1px;
-	margin-top: 0px;
-	padding: 0px;
-	border: 0px solid black;
-	border-radius: 0px;
-	background-color: transparent;
-	color: #abdb6c;
-	font-size: 32px;
-}
-.tariff-speed {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-}
 .action-link {
 	color: #303934;
 	font-size: 48px;
-}
-.tariffs {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 4em;
-	clear: both;
 }
 .tariff {
 	width: 30%;
@@ -273,7 +230,6 @@ p {
 	float: left;
 	clear: none;
 	background-color: #303934;
-	font-family:'Open Sans', sans-serif;
 	color: #abdb6c;
 	font-size: 14px;
 	text-align: center;
@@ -291,21 +247,18 @@ p {
 	overflow-x: visible;
 	overflow-y: visible;
 	padding-left: 95px;
-	font-family:'Open Sans', sans-serif;
 	color: #303934;
 	font-size: 16px;
 	line-height: 23px;
 	text-align: left;
 }
 .growing {
-	font-family:'Open Sans', sans-serif;
 	color: #74a722;
 	font-style: normal;
 }
 .action {
-	margin-top: 14px;
-	margin-bottom: 82px;
-	font-family:'Open Sans', sans-serif;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	color: #303934;
 	font-size: 18px;
 	line-height: 1.5em;
@@ -331,7 +284,6 @@ p {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background-color: #303934;
-	font-family:'Open Sans', sans-serif;
 	color: #abdb6c;
 	font-size: 18px;
 	line-height: 64px;
@@ -350,12 +302,10 @@ p {
 	padding-top: 10px;
 	border: 2px solid #bec4b4;
 	background-color: white;
-	font-family:'Open Sans', sans-serif;
 }
 .tariff2-speed {
 	height: 64px;
 	padding-top: 10px;
-	font-family:'Open Sans', sans-serif;
 	color: #333;
 }
 .tariff2-speed.tariff-cell {
@@ -366,7 +316,6 @@ p {
 	margin-left: 0px;
 	padding-right: 0px;
 	padding-left: 0px;
-	font-family:'Open Sans', sans-serif;
 	font-size: 22px;
 	line-height: 26px;
 	font-style: normal;
@@ -530,30 +479,115 @@ color: #525754;
 font-size: 18px;
 }
 
-.tariffs thead {
-	background-color: #74a722;
+table {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4em;
+	clear: both;
+}
+
+
+thead {
 	color: #fcfcfc;
 }
 
-.tariffs th {
-	padding: 17px 20px 17px 20px;
+th {
+	padding: 7px 5px;
 	font-size: 16px;
-	font-family:'Open Sans', sans-serif;
 	font-weight: 400;
+	border: 1px solid white;
 }
 
-.tariffs td {
+td {
 	border: 1px solid rgba(190, 196, 180, 0.65);
 	text-align: center;
-	padding: 17px 0;
+	padding: 17px 5px;
+	font-size: 14px;
+	color: #525754;
+	vertical-align: top;
+}
+
+tr:nth-child(2) th {
+	background-color: #768185;
+}
+
+tr:nth-child(3) th {
+	background-color: #99A7B4;
+}
+tr:first-child th {
+	background-color: #74a722;
+}
+tr:first-child th:last-child {
+	border-top-right-radius: 7px;
+}
+
+tr:first-child th:first-child {
+	border-top-left-radius: 7px;
+}
+
+table li {
+	list-style-type: none;
+}
+
+table ul {
+	padding: 0;
+	text-align: left;
+}
+
+
+.payment {
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+}
+
+.payment p {
+	font-size: 1em;
+	text-align: center;
+	color: #525754;
+}
+
+.plus {
+	margin-bottom: 3.5em;
+}
+
+.benefit {
+	color: #525754;
+	font-weight: 700;
+	text-align: left;
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
 	font-size: 18px;
+	line-height: 1.2em;
+}
+.plus img {
+	margin-left: 15px;
+	vertical-align: top;
+}
+.plus span {
+	display: inline-block;
+	text-align: left;
+	color: #525754;
+	width: 50%;
+	margin-left: 5em;
+	vertical-align: top;
 }
 
-table th:last-child {
-    border-top-right-radius: 7px;
+.video {
+	margin: 0 auto;
+	display: block;
 }
 
-/* bottom-left border-radius */
-table th:first-child {
-    border-top-left-radius: 7px;
+/* index html */
+ 
+
+.tariffs td {
+	font-size: 16px;
+}
+
+.tariffs th {
+	padding: 17px 20px;
 }

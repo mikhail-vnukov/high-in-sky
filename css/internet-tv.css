@@ -1,0 +1,39 @@
+.channels {
+	
+}
+
+.iptv-images > div {
+	display: inline-block;
+	margin: 0 3em;
+	width: 149px;
+	text-align: center;
+}
+
+.iptv-images {
+	text-align: center;
+}
+
+.hd {
+	font-weight: bold;
+	color: white;
+	background-color: #90C72F;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: 0.5em;
+}
+/*
+.iptv-images:after{
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+*/
+/*.iptv1 {
+	background-image: url(".../images/iptv1.png");
+} 
+.iptv2 {
+	background-image: url(".../images/iptv2.png");
+} 
+.iptv3 {
+	background-image: url(".../images/iptv3.png");
+} */
