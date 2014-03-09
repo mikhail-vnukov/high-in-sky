@@ -21,19 +21,11 @@
 	padding-right: 2px;
 	margin-left: 0.5em;
 }
-/*
-.iptv-images:after{
-  content: "";
-  width: 100%;
-  display: inline-block;
+
+.video {
+	margin: 0 auto;
+	display: block;
+	width: 853px;
+	height: 480px;
 }
-*/
-/*.iptv1 {
-	background-image: url(".../images/iptv1.png");
-} 
-.iptv2 {
-	background-image: url(".../images/iptv2.png");
-} 
-.iptv3 {
-	background-image: url(".../images/iptv3.png");
-} */
+
