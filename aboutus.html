@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Feb 24 2014 20:43:32 GMT+0000 (UTC) -->
+
+
 <html data-wf-site="53036c6ec56f13042c0004b4">
 <head>
 	<meta charset="utf-8">
@@ -42,9 +42,8 @@
 				<a class="nav-link" href="payment.html">Оплата</a>
 				<a class="nav-link" href="benefits.html">Почему мы лучше</a>
 				<a class="nav-link active">О компании</a>
+				<button id="form-trigger" class="form-button button">Отправить заявку</button> 
 
-				<a class="form-button button" href="#">
-					<br>Отправить заявку</a>
 			</div>
 		</div>
 		<div class="w-col w-col-9">
@@ -87,6 +86,8 @@
 			<a href="internettv.html#start">
 			  <img class="banner" src="images/banner.jpg" alt="Оборудование в аренду"/>
 			</a>
+			<button id="form-trigger2" class="additional form-button button">Отправить заявку</button> 
+
 		</div>
 	</div>
 	<footer class="footer-section">
@@ -124,7 +125,8 @@
 	</footer>
 	<!-- popups -->
 	<div  id="popup-form" class="popup-form md-modal md-effect-13">
-		<form method="POST"  action="formdata.php" name="form" class="md-content" data-validate="parsley">
+		<!-- <form  name="form" class="md-content" data-validate="parsley"> -->
+		<form name="form" class="md-content" data-validate="parsley"> 
 			<h1>Заявка на подключение</h1>
 			<input type="text" placeholder="Ф.И.О." name="name" required="required"></input>
 			<input type="text" placeholder="Телефон" name="email" required="required"></input>
@@ -156,6 +158,9 @@
 	<div class="md-overlay"></div>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
+	
 	<script type="text/javascript" src="js/webflow.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

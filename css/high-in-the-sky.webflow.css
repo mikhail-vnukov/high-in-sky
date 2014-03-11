@@ -3,10 +3,26 @@
 	src: url('../fonts/Sansation-Regular.ttf'); 
 	}
 
-form {
+.md-content {
 	border: 5px solid #74a722;
 	background-color: white;
 	padding: 0em 3em;
+}
+
+
+.form-closure .md-content {
+	padding: 1em;
+}
+
+.form-closure {
+	width: 380px;
+	font-size: 19px;
+}
+
+.form-closure .close-button {
+	float: none;
+	margin-top: 1em;
+	width: 95%;
 }
 
 button {
@@ -122,13 +138,18 @@ h6 {
 	line-height: 18px;
 	font-weight: 400;
 }
+
+.nobr {
+	white-space:nowrap;
+}
 p {
 	margin-right: 0px;
 	margin-bottom: 14px;
 	color: #303934;
-	font-size: 14px;
+	font-size: inherit;
 }
-.button {
+
+button {
 	display: inline-block;
 	height: 50px;
 	padding: 4px 15px;
@@ -148,12 +169,22 @@ p {
 	list-style-type: disc;
 	text-shadow: none;
 }
+
+button:hover {
+	background-color: #477006;
+}
 a.button, .form-button {
 	width: 77%;
 	margin-top: 67px;
 	margin-bottom: 14px;
 	margin-left: 0px;
 }
+
+.form-button.additional {
+	display: none;
+	margin: 38px auto 0;
+}
+
 .content-block {
 	width: 100%;
 	margin-top: 25px;
@@ -309,7 +340,7 @@ a.button, .form-button {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	color: #303934;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5em;
 	font-style: normal;
 	text-align: center;
@@ -373,6 +404,20 @@ a.button, .form-button {
 .link {
 	color: #74a722;
 }
+
+.banner {
+	margin: 20px auto;
+	display: block;
+	margin-top: 6em;
+}
+
+.video-banner {
+	margin: 20px auto;
+	display: block;
+	cursor: pointer;
+}
+
+
 @media (max-width: 991px) {
 	h3 {
 		margin-top: 0px;
@@ -428,6 +473,15 @@ a.button, .form-button {
 	}
 }
 @media (max-width: 767px) {
+	.video-banner {
+		display: none;
+	}
+
+	.form-button.additional {
+		display: block;
+		margin: 38px auto 0;
+	}
+
 	.left-sidebar {
 		padding-top: 29px;
 	}
@@ -517,21 +571,9 @@ a.button, .form-button {
 }
 
 
-.banner {
-	margin: 20px auto;
-	display: block;
-	margin-top: 6em;
-}
-
-.video-banner {
-	margin: 20px auto;
-	display: block;
-	cursor: pointer;
-}
-
 .phones h3 {
-color: #525754;
-font-size: 18px;
+	color: #525754;
+	font-size: 18px;
 }
 
 table {
@@ -645,3 +687,27 @@ table ul {
 .tariffs th {
 	padding: 17px 20px;
 }
+
+.sticky-wrapper {
+	text-align: left;
+}
+
+@media (max-height: 802px) {
+	.fixed-nav {
+		position: static ;
+		width: auto;
+	}
+
+	#form-trigger {
+		/*margin-left: 39px;*/
+		
+	}
+}
+
+@media (min-width: 767px) {
+	.stuck {
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 17.9718%;
+	}
