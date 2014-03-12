@@ -457,7 +457,7 @@ a.button, .form-button {
 		margin-top: 68px;
 	}
 	.fixed-nav.w-clearfix {
-		margin-top: 0px;
+		margin-top: relative;
 	}
 	.slogan {
 		margin-left: 14px;
@@ -507,7 +507,7 @@ a.button, .form-button {
 		background-image: url('../images/example-bg.png');
 	}
 	.fixed-nav {
-		position: static;
+		position: relative !important;
 		width: auto;
 	}
 	.headtop {
@@ -699,7 +699,7 @@ table ul {
 	}
 
 	#form-trigger {
-		/*margin-left: 39px;*/
+		margin-left: 39px;
 		
 	}
 }
@@ -707,7 +707,7 @@ table ul {
 @media (min-width: 767px) {
 	.stuck {
 		top: 0;
-		left: 0;
+		/*left: 41px;*/
 		position: fixed;
-		width: 17.9718%;
+		width: 19.25%;
 	}

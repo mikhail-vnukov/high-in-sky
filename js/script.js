@@ -78,30 +78,29 @@ $(document).ready(function() {
 })();
 
 
-// (function() {
-// 	var $nav    = $(".fixed-nav"),
-// 		 $button = $('#form-trigger');
+(function() {
+	var $nav    = $(".fixed-nav"),
+		 $button = $('#form-trigger');
 
-// 	$(window).resize(function() {
-// 		stickElementsIfNecessary();
-// 	})
-// 	stickElementsIfNecessary();
-// 	function stickElementsIfNecessary() {
-// 		if ($nav.css("position") === 'static') {
-// 			if ($(".sticky-wrapper").length == 0) {
-// 				$button.waypoint('sticky', {
-// 					stuckClass: 'stuck'
-// 				});	
-// 			}
-// 		} else {
-// 			if ($(".sticky-wrapper").length > 0) {
-// 				$button.waypoint('unsticky');
-// 			}
-// 		}
+	$(window).resize(function() {
+		stickElementsIfNecessary();
+	})
+	stickElementsIfNecessary();
+	function stickElementsIfNecessary() {
+		if ($nav.css("position") === 'static') {
+			if ($(".sticky-wrapper").length == 0) {
+				$button.waypoint('sticky', {
+					stuckClass: 'stuck'
+				});	
+			}
+		} else {
+			if ($(".sticky-wrapper").length > 0) {
+				$button.waypoint('unsticky');
+			}
+		}
 
-// 	}
-	
-// })();
+	}
+})();
 
 });
 
