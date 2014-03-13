@@ -1,0 +1,32 @@
+.channels {
+	
+}
+
+.iptv-images > div {
+	display: inline-block;
+	margin: 0 3em;
+	width: 149px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.iptv-images {
+	text-align: center;
+}
+
+.hd {
+	font-weight: bold;
+	color: white;
+	background-color: #90C72F;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: 0.5em;
+}
+
+.video {
+	margin: 0 auto;
+	display: block;
+	width: 853px;
+	height: 480px;
+}
+

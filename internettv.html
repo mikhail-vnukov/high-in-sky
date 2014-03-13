@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+
+<html data-wf-site="53036c6ec56f13042c0004b4">
+<head>
+	<meta charset="utf-8">
+	<title>High in the sky</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/webflow.css">
+	<link rel="stylesheet" type="text/css" href="css/high-in-the-sky.webflow.css">
+	<link rel="stylesheet" type="text/css" href="css/internet-tv.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<script>
+		if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+	</script>
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+	<div class="w-embed">
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	</div>
+	<div class="w-row">
+		<div class="w-col w-col-3 left-sidebar">
+			<div class="w-clearfix fixed-nav">
+				<a href="index.html"><img class="logo" src="images/logo.png" width="268px" alt="53036ce83b32d3176500059b_logo.png"></a>
+				<span class="w-hidden-medium w-hidden-small w-hidden-tiny slogan" color="white">SkyNet. Интернет–провайдер</span>
+				<div class="w-hidden-main w-hidden-medium w-clearfix headtop-mobile">
+					<h3>Действующим абонентам:<br> <strong>8&nbsp;(812)&nbsp;386-20-20</strong></h3>
+					<h3>Бесплатное подключение:<br><strong class="phone">8&nbsp;(812)&nbsp;642-20-35</strong></h3>
+				</div>
+				<h2 class="w-hidden-main w-hidden-medium devise-mobile">Круглосуточный доступ в Интернет на скорости до 100 Мбит/c.</h2>
+
+				<a class="nav-link" href="index.html">Интернет</a>
+				<a class="nav-link active">Интернет+ТВ</a>
+				<a class="nav-link" href="subscriptions.html">Абонементы</a>
+				<a class="nav-link" href="payment.html">Оплата</a>
+				<a class="nav-link" href="benefits.html">Почему мы лучше</a>
+				<a class="nav-link" href="aboutus.html">О компании</a>
+
+				<button id="form-trigger" class="form-button button">Отправить заявку</button> 
+			</div>
+		</div>
+		<div class="w-col w-col-9">
+			<div class="w-hidden-small w-hidden-tiny headtop">
+				<div class="w-row">
+					<div class="w-col w-col-4"></div>
+					<div class="w-col w-col-8 w-clearfix phones">
+						<h3>Действующим абонентам:<br> <strong class="phone">8&nbsp;(812)&nbsp;386-20-20</strong></h3>
+						<h3>Бесплатное подключение:<br><strong>8&nbsp;(812)&nbsp;642-20-35</strong></h3>
+					</div>
+				</div>
+			</div>
+			<h2 id="start" class="w-hidden-small w-hidden-tiny devise">Телевидение нового поколения от SkyNet - это более 150 телеканалов, в том числе в HD-качестве</h2>
+			 
+		 	<a onclick="openVideo(this); return false;" target="_blank" href="http://www.youtube.com/embed/Kvm--pZaQD4?rel=0">
+			 	<img id="video-banner" class="video-banner" src="images/videobanner.jpg" width="560" height="315"/>	
+			</a> 
+
+			<h2>Тариф "Комбо": что вы получаете</h2>
+			<ul class="w-list-unstyled advantages">
+				<li class="w-clearfix feature">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Более 150 каналов в цифровом и HD качестве;</div>
+				</li>
+				<li class="w-clearfix feature">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Безлимитный доступ в интернет на скорости от 50 до 100 Мбит/с;</div>
+				</li>
+				 <li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Внешний IP-адрес;</div>
+				</li>
+				<li class="w-clearfix feature">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Установку и настройку роутеров Wi-Fi и ТВ-оборудования;</div>
+				</li>
+				<li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Круглосуточную техническую поддержку по телефону или онлайн;</div>
+				</li>
+				<li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Бесплатный ремонт, включая случаи, возникшие&nbsp;по вине абонента;</div>
+				</li>
+				 <li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Доменное имя в зоне sknt.ru;</div>
+				</li>
+				<li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Почтовый ящик&nbsp;name@sknt.ru;</div>
+				</li>
+				<li class="w-clearfix">
+					<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+					<div>Локальный Yandex.</div>
+				</li>
+			</ul>
+			<h2>Основные пакеты каналов</h2>
+			<table class="">
+				<thead>
+					<tr>
+						<th>Период оплаты</th>
+						<th>Абонентская плата</th>
+						<th>Минимальная скорость</th>
+						<th>Максимальная скорость</th>
+						<th>Примечание</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 месяц</td>
+						<td>750 руб/мес</td>
+						<td>50 Мбит/с</td>
+						<td>100 Мбит/с</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>3 месяца</td>
+						<td>710 руб/мес <br>(единовременный платёж 2130&nbsp;руб)</td>
+						<td>50 Мбит/с</td>
+						<td>100 Мбит/с</td>
+						<td>Скидка <br>120 руб</td>
+					</tr>
+					<tr>
+						<td>6 месяцев</td>
+						<td>675 руб/мес <br>(единовременный платёж 4050&nbsp;руб)</td>
+						<td>50 Мбит/с</td>
+						<td>100 Мбит/с</td>
+						<td>Скидка <br>450 руб</td>
+					</tr>
+					 <tr>
+						<td>12 месяцев</td>
+						<td>600 руб/мес <br>(единовременный платёж 7200&nbsp;руб)</td>
+						<td>50 Мбит/с</td>
+						<td>100 Мбит/с</td>
+						<td>Скидка <br>1800 руб</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="channels">
+				<thead>
+					<tr>
+							<th colspan="5">Список каналов</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>SET</li>
+								<li>100 ТВ</li>
+								<li>2x2</li>
+								<li>5 канал</li>
+								<li>A-One</li>
+								<li>AXN Sci-Fi Russia</li>
+								<li>Amazing Life</li>
+								<li>Animal Planet</li>
+								<li>Bridge TV</li>
+								<li>Deutsche Welle</li>
+								<li>Discovery</li>
+								<li>Discovery Science</li>
+								<li>Discovery World</li>
+								<li>English Club</li>
+								<li>EuroNews</li>
+								<li>France 24</li>
+								<li>GlobalStar</li>
+								<li>Hard Life</li>
+								<li>Investigation Discovery</li>
+								<li>Пятница!</li>
+								<li>Nickelodeon</li>
+								<li>Paramount Comedy</li>
+								<li>RU.TV</li>
+								<li>TDK</li>
+								<li>TLC</li>
+								<li>TV 5 Monde</li>
+								<li>Top Shop TV</li>
+								<li>Universal</li>
+								<li>VH1 European</li>
+								<li>World Fashion</li>
+								<li>Домашний</li>
+								<li>Европа Плюс ТВ</li>
+								<li>Еда</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Звезда</li>
+								<li>Знание</li>
+								<li>Канал Disney</li>
+								<li>Карусель</li>
+								<li>Культура</li>
+								<li>Мир</li>
+								<li>Муз-ТВ</li>
+								<li>НТВ</li>
+								<li>Нано ТВ</li>
+								<li>ОСТ ТВ</li>
+								<li>Первый</li>
+								<li>Перец</li>
+								<li>РБК</li>
+								<li>Радость моя</li>
+								<li>Рен ТВ</li>
+								<li>Россия</li>
+								<li>Россия 2</li>
+								<li>Россия 24</li>
+								<li>Русский экстрим</li>
+								<li>СТС</li>
+								<li>Синергия ТВ</li>
+								<li>Союз</li>
+								<li>Спас</li>
+								<li>ТБН</li>
+								<li>ТВ 3</li>
+								<li>ТВ Центр</li>
+								<li>ТНТ</li>
+								<li>Шансон ТВ</li>
+								<li>Ю ТВ</li>
+								<li>24 Док</li>
+								<li>24 Техно</li>
+								<li>365 дней</li>
+								<li>CBS Drama</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>CBS Reality</li>
+								<li>DIVA Universal</li>
+								<li>Extreme Sports</li>
+								<li>FOX</li>
+								<li>FOX Life</li>
+								<li>Gulli</li>
+								<li>JCTV</li>
+								<li>JimJam</li>
+								<li>MCM Top</li>
+								<li>MTV Dance</li>
+								<li>MTV Hits</li>
+								<li>MTV Rocks</li>
+								<li>Nat Geo Wild</li>
+								<li>National Geographic</li>
+								<li>Rusong TV</li>
+								<li>Russian Travel Guide</li>
+								<li>STV (Бульвар ТВ)</li>
+								<li>TiJi</li>
+								<li>Travel+ Adventure</li>
+								<li>VH1 Classic</li>
+								<li>Авто плюс</li>
+								<li>Боец ТВ</li>
+								<li>Время</li>
+								<li>Детский</li>
+								<li>Дом кино</li>
+								<li>Еврокино</li>
+								<li>Зоопарк</li>
+								<li>Иллюзион+</li>
+								<li>Индия ТВ</li>
+								<li>Интересное ТВ</li>
+								<li>КХЛ ТВ</li>
+								<li>Кино плюс</li>
+								<li>Кинолюкс</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Комедия ТВ</li>
+								<li>Комсомольская правда</li>
+								<li>Кто есть кто</li>
+								<li>Кухня ТВ</li>
+								<li>Ля-Минор</li>
+								<li>Мать и дитя</li>
+								<li>Много ТВ</li>
+								<li>Музыка Первого</li>
+								<li>Мультимания</li>
+								<li>НСТ</li>
+								<li>Ностальгия</li>
+								<li>Парк развлечений</li>
+								<li>Русский иллюзион</li>
+								<li>Совершенно секретно</li>
+								<li>Спорт плюс</li>
+								<li>ТНВ Татарстан</li>
+								<li>Телеканал Футбол</li>
+								<li>Телекафе</li>
+								<li>Улыбка ребенка</li>
+								<li>Ямал-Регион</li>
+								<li>Dange TV</li>
+								<li>Бойцовский клуб</li>
+								<li>Наука 2.0</li>
+								<li>Моя планета</li>
+								<li>История</li>
+								<li>Спорт</li>
+								<li>Сарафан ТВ</li>
+								<li>Русский роман</li>
+								<li>Русский бестселлер</li>
+								<li>Nick JR</li>
+								<li>Страна</li>
+								<li>ОТР</li>
+								<li>Мир 24</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Просвещение</li>
+								<li>Arirang</li>
+								<li>Sony Turbo</li>
+								<li>Комеди ТВ</li>
+								<li>Zee TV</li>
+								<li>Санкт-Петербург</li>
+								<li>Стрела ТВ</li>
+								<li>Мужской</li>
+								<li>Загородная жизнь</li>
+								<li>9 канал Кубань</li>
+								<li>9 канал Орбита</li>
+								<li>I-Concert</li>
+								<li>ARM TV</li>
+								<li>Luxe TV</li>
+								<li>MyZen TV</li>
+								<li>Russia Today AC3*</li>
+								<li>Первый Интернет канал</li>
+								<li>Fashion TV</li>
+								<li>HD Life</li>
+
+								<li>Спорт 1 <span class="hd">HD</span></li>
+								<li>RT Doc AC3*<span class="hd">HD</span></li>
+								<li>Travel+ Adventure<span class="hd">HD</span></li>
+								<li>Еда<span class="hd">HD</span></li>
+								<li>КХЛ ТВ<span class="hd">HD</span></li>
+								<li>Первый<span class="hd">HD</span></li>
+								<li>Россия<span class="hd">HD</span></li>
+								<li>Теледом<span class="hd">HD</span></li>
+								<li>RTG<span class="hd">HD</span></li>
+								<li>HD Media*<span class="hd">HD</span></li>
+								<li>1<span class="hd">HD</span></li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+	 
+		 
+				<ul class="w-list-unstyled advantages">
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>* - данные каналы доступны только на приставках TVIP S-213 и S-300.</div>
+					</li>
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>Подключение дополнительных пакетов возможно только при наличии активной подписки на тарифе "Комбо";</div>
+					</li>
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>Просмотр телеканалов Animal Planet, Animal Planet HD, Discovery, Discovery Showcase HD, Discovery Science, Discovery World, TLC, Investigation Discovery возможен только на IPTV-приставке.</div>
+					</li>
+		</ul>
+
+	<h2>Дополнительные пакеты каналов</h2>
+	
+		<table class="">
+				<thead>
+					<tr>
+							<th colspan="5">Тарифы для дополнительных пакетов каналов</th>
+					</tr>
+					<tr>
+						<th rowspan="2">Пакет</th>
+						<th rowspan="2">Стоимость</th>
+						<th colspan="3">Абонемент</th>
+					</tr>
+					<tr>
+						<th>На 3 месяца</th>
+						<th>На 6 месяцев</th>
+						<th>На 12 месяцев</th>
+					</tr>
+
+				</thead>     	
+			 
+				<tbody>
+					<tr>
+						<td> ДЛЯ ВЗРОСЛЫХ (4 канала) </td>
+						<td> 99 руб/месяц </td>
+						<td>94 руб/месяц</td>
+						<td>89 руб/месяц</td>
+						<td>84 руб/месяц</td>
+					</tr>
+
+					<tr>
+						<td> ЛЮКС HD (9 каналов) </td> 
+						<td> 150 руб/месяц </td>
+						<td>140 руб/месяц</td>
+						<td>135 руб/месяц</td>
+						<td>120 руб/месяц</td>
+					</tr>	
+					
+					<tr>
+						<td> НАШ ФУТБОЛ (2 канала) </td>
+						<td> 149 руб/месяц </td>
+						<td>149 руб/месяц</td>
+						<td>149 руб/месяц</td>
+						<td>149 руб/месяц</td>
+					</tr>		
+						
+				</tbody>
+		</table>
+		<table class="">
+				<thead>
+					<tr>
+							<th colspan="3">Список дополнительных пакетов каналов</th>
+					</tr>
+					<tr>
+						<th>Для взрослых</th>
+						<th>Люкс HD</th>
+						<th>Наш футбол</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Private Spice (18+)</li>
+								<li>Playboy TV (18+)</li>
+								<li>XXL (18+)</li>
+								<li>Русская ночь (18+)</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Animal Planet AC3*<span class="hd">HD</span></li>
+								<li>Discovery Showcase AC3*<span class="hd">HD</span></li>
+								<li>Nat Geo Wild<span class="hd">HD</span></li>
+								<li>Nickelodeon AC3*<span class="hd">HD</span></li>
+								<li>Mezzo Live<span class="hd">HD</span></li>
+								<li>National Geographic<span class="hd">HD</span></li>
+								<li>FOX Life<span class="hd">HD</span></li>
+								<li>MTV Live AC3*<span class="hd">HD</span></li>
+								<li>FOX<span class="hd">HD</span></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Наш Футбол</li>
+								<li>Наш Футбол HD<span class="hd">HD</span></li>
+							</ul>
+						</td>
+					</tr>		
+				</tbody>
+		</table>
+			<ul class="w-list-unstyled advantages">
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>* - данные каналы доступны только на приставках TVIP S-213 и S-300.</div>
+					</li>
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>Подключение дополнительных пакетов возможно только при наличии активной подписки на тарифе "Комбо";</div>
+					</li>
+					<li class="w-clearfix feature">
+						<img class="features-icon" src="images/check.png" width="37" height="0" alt="530b87bc3cd1ace03e000a49_check.png">
+							<div>Просмотр телеканалов Animal Planet, Animal Planet HD, Discovery, Discovery Showcase HD, Discovery Science, Discovery World, TLC, Investigation Discovery возможен только на IPTV-приставке.</div>
+					</li>
+		</ul>
+		<h2>IPTV-ПРИСТАВКИ</h2>
+			<div class="action">
+				Для просмотра на большом экране телевизора, рекомендуем приобрести IPTV-приставку!
+			Выберите удобное для вас оборудование:
+			</div>
+
+			<div class="iptv-images">
+				<div>
+					<img src="images/iptv1.png">
+					Приставка D-Link DIB 120
+				</div>
+				<div>
+					<img src="images/iptv2.png">
+					Приставка TVIP <span class="nobr">S-213</span>
+				</div>
+
+				<div>
+					<img src="images/iptv3.png">
+					Приставка TVIP <span class="nobr">S-300</span>
+
+				</div>
+
+			</div>
+			<button id="form-trigger2" class="additional form-button button">Отправить заявку</button> 
+
+		</div>
+	</div>
+	<footer class="footer-section">
+		<div class="w-row">
+			<div class="w-col w-col-5">
+				<h6>Центры обслуживания абонентов:</h6>
+				<div class="w-row">
+					<div class="w-col w-col-4">
+						<div>Санкт-Петербург,
+							<br>пер. Учебный, 2
+							<br><a href="http://maps.yandex.ru/?text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA%2C%202&amp;sll=30.334113%2C60.039926&amp;ll=30.333592%2C60.039710&amp;spn=0.020170%2C0.008813&amp;z=16&amp;l=map"
+							class="link">на карте</a>
+						</div>
+					</div>
+					<div class="w-col w-col-8">
+						<div>Санкт-Петербург,
+							<br>ул. Ярослава Гашека, 2
+							<br><a href="http://maps.yandex.ru/?text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA%2C%202&amp;sll=30.334113%2C60.039926&amp;ll=30.333592%2C60.039710&amp;spn=0.020170%2C0.008813&amp;z=16&amp;l=map"
+							class="link">на карте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-col w-col-7">
+				<div class="w-row">
+					<div class="w-col w-col-7">
+						<h6>Бесплатное подключение:<br><br><strong>8 (812) 642-20-35</strong></h6>
+					</div>
+					<div class="w-col w-col-5">
+						<h6>Действующим абонентам:<br><br> <strong>8 (812) 386-20-20</strong></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- popups -->
+	<div  id="popup-form" class="popup-form md-modal md-effect-13">
+		<form  name="form" class="md-content" data-validate="parsley">
+			<h1>Заявка на подключение</h1>
+			<input type="text" placeholder="Ф.И.О." name="name" required="required"></input>
+			<input type="text" placeholder="Телефон" name="email" required="required"></input>
+			<input type="text" placeholder="Название улицы" name="name2" required="required"></input>
+			<input type="text" class="narrow" placeholder="Номер дома" name="name3" required="required"></input>
+			<input type="text" class="narrow right" placeholder="Номер квартиры" name="name4" required="required"></input>
+
+			<div class="form-control clearfix">
+				<button type="submit" class="button submit-button">Отправить</button>
+				<button id="close-button" class="button close-button" type="reset">Закрыть</button>
+			</div>
+			<div class="disclaimer"> Мы подключим вас в любой удобный день и время!</div>
+		</form>
+	</div>
+
+	<div class="form-closure md-modal form-done md-effect-13">
+		<div class="md-content">
+			Ваша заявка принята! Наши менеджеры свяжутся с вами в ближайшее время
+			<button class="close-button">Закрыть</button>
+		</div>
+	</div>
+		
+	<div class="form-closure md-modal form-fail md-effect-13">
+		<div class="md-content">
+			<p>Извините, что-то пошло не так во время отправки формы :(</p>
+			<button class="close-button">Закрыть</button>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
+
+	<script type="text/javascript" src="js/webflow.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
